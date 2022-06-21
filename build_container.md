@@ -1,12 +1,3 @@
-#### What is a container?
-Containers are instances of Docker images that can be run using the Docker run command. The basic purpose of Docker is to run containers.
-- is a runnable instance of an image. You can create, start, stop, move, or delete a container using the DockerAPI or CLI.
-- can be run on local machines, virtual machines or deployed to the cloud.
-- is portable (can be run on any OS)
-- Containers are isolated from each other and run their own software, binaries, and configurations.
-
-#### What is a container image?
-When running a container, it uses an isolated filesystem. This custom filesystem is provided by a container image. Since the image contains the container’s filesystem, it must contain everything needed to run an application - all dependencies, configuration, scripts, binaries, etc. The image also contains other configuration for the container, such as environment variables, a default command to run, and other metadata.
 ### Build the app’s container image
 in order to build the application, we need to use a Dockerfile. A Dockerfile is simply a text-based script of instructions that is used to create a container image
 
