@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <style>
+        body{
+            background: #f0f0f0
+        }
+        .list {
+            margin-left:auto;
+            margin-right:auto;
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th{
+            border: 2px solid black;
+            height: 35px;
+        }
+        td{
+            border: 2px solid black;
+            padding-left: 10px;
+        }
+
+        .actions {
+            margin-left:auto;
+            margin-right:auto;
+            border-collapse: collapse;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Student List</h1>
+    <table class="list">
+    <tr>
+        <th style="width:10%">ID</th>
+        <th style="width: 40%">Name</th>
+        <th style="width: 13%">Age</th>
+        <th style="width: 25%">Phone</th>
+    </tr>
+
+    {% for stud in students %}
+    <tr style="height: 30px">
+        <td>{{stud[0]}}</td>
+        <td>{{stud[1]}} {{stud[2]}}</td>
+        <td>{{stud[3]}}</td>
+        <td>{{stud[4]}}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+    <br><br>
+<table class="actions">
+    <tr >
+        <td style="border:0px">
+            <form method="post" name="enter">
+                <p> <label for="fname">First Name : </label> <input type="text" name="fname" placeholder="First Name"> </p>
+                <p> <label for="lname">Last Name : </label> <input type="text" name="lname" placeholder="Last Name"> </p>
+                <p> <label for="age">Age : </label> <input type="number" name="age" placeholder="Age"> </p>
+                <p> <label for="phone">Phone : </label> <input type="number" name="phone" placeholder="Phone"> </p>
+                <button type="submit">Submit</button>
+            </form>
+        </td>
+
+        <td style="border:0px">
+            <form method="post" name="delete">
+                <p>Enter ID to be deleted</p>
+                <p> <label for="id">ID : </label> <input type="number" name="id" placeholder="ID"> </p>
+                <button type="submit" >Submit</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+
