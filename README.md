@@ -49,6 +49,7 @@ creating a github account
 - You will learn git commands (push, pull make Pull request etc)
 ## Schedule
 | Time            | Topics
+|-----------------|-------
 | 09:00 - 09:30   |  [`Introduction`]
 | 09:30 - 10:00   |  [`Introduction to GIT`](github_intro.md)
 | 10:00 - 11:00   |  [`Git Commands (push, pull, make Pull request etc)`](github_commands.md)
