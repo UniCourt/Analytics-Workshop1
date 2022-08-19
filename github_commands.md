@@ -36,7 +36,7 @@ Forking refers to making a copy of a project you want to contribute to. Now lets
 
 Follow these steps to fork a project:
 
-1. Go to the project url using this link:https://github.com/nireekshith-uc/workshop or any other link
+1. Go to the project url using this link https://github.com/UniCourt/Analytics-Workshop1 or any other link
 2. Click on the fork button in the project page
 3. Select a namespace to fork our project. Select your namespace here.
 
@@ -55,7 +55,7 @@ Authenticate with GitLab by following the instructions in the SSH documentation.
 
     For example,
 
-        git clone "git@github.com:nireekshith-uc/workshop.git"
+        git clone "git@github.com:<your-username>/Analytics-Workshop1.git"
 
 ## View your remote repositories
 To view the remote repositories that you have added, run following command:
@@ -75,7 +75,7 @@ Run the following command to add upstream repository.
 
 For example,
 
-    git remote add upstream "git@github.com:nireekshith-uc/workshop.git"
+    git remote add upstream "git@github.com:UniCourt/Analytics-Workshop1.git"
 
 
 ## Create a branch
