@@ -28,7 +28,7 @@ creating a github account
 <br> Step 3: open https://github.com/UniCourt/Analytics-Workshop1 in your browser and Fork (option between watch and star) 
 
 ## Docker install 
-    1. Go to Analytics-workshop-1 (which is cloned in above step)
+    1. cd Analytics-Workshop1/ (which is cloned in above step)
     2. sh prerequisites_install_docker.sh (This will install docker)
 
 
