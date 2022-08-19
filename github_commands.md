@@ -3,7 +3,6 @@
 https://github.com/
 
 
-
 Run following command to verify if Git works on your computer:
 
     git --version
