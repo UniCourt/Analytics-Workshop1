@@ -33,10 +33,10 @@ creating a github account
 
 
 ## Docker image 
-    1. docker pull mysql:8.0
-    2. docker pull php:7.4-apache
-    3. docker pull hello-world
-    4. docker pull alpine
+    1. sudo docker pull mysql:8.0
+    2. sudo docker pull php:7.4-apache
+    3. sudo docker pull hello-world
+    4. sudo docker pull alpine
 ## Docker
 
 - By the end of this workshop you will understand following things
