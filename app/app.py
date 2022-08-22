@@ -30,6 +30,8 @@ def get_db_connection():
 
     cur.close()
     return conn
+   
+# comment
 
 @app.route('/', methods=('GET', 'POST'))
 def index():
