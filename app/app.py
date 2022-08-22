@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, redirect
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 app = Flask(__name__)
 
+#this is a test change
 def get_db_connection():
     try:
         conn = psycopg2.connect(host='db',
@@ -30,7 +31,6 @@ def get_db_connection():
 
     cur.close()
     return conn
-
 @app.route('/', methods=('GET', 'POST'))
 def index():
     conn = get_db_connection()
