@@ -60,4 +60,3 @@ creating a github account
 |                 | [`Run Multiple Services with Docker Compose`](docker_compose.md)
 | 4:00 -  5:00    |  [`Expose Ports, Volume Mounts, Utilizing Networks, Limiting Resources`](docker_ports_volumn_mount.md)
 | 5:15 -  5:30    |  [`Wrapping Up`]
-
