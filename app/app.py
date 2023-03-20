@@ -4,6 +4,8 @@ from flask import Flask, render_template, request, redirect
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 app = Flask(__name__)
 
+
+#This method will create a new connection
 def get_db_connection():
     try:
         conn = psycopg2.connect(host='db',
