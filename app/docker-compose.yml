@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres
+    container_name: app_database
+    ports:
+      - '0.0.0.0:7000:7000'
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=flask_db
+    volumes:
+      - app-db:/var/lib/postgres
+  web:
+    build: .
+    ports:
+      - "0.0.0.0:5000:5000"
+    container_name: app_frontend
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - FLASK_ENV=development
+
+volumes:
+  app-db:
+
+
