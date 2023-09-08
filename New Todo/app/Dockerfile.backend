@@ -1,0 +1,16 @@
+FROM node:20-alpine3.17 AS backend-builder
+
+WORKDIR /app/server
+
+# Copy the backend application files
+COPY ./server/package*.json ./
+RUN npm install
+COPY ./server ./
+
+# Expose the port for your backend
+EXPOSE 8080
+
+# Run your backend server
+CMD ["npm", "start"]
+
+
