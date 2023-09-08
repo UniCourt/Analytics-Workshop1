@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=react_todo
+    ports:
+        - "0.0.0.0:7000:5432"
+    volumes:
+        - postgres-data:/var/lib/postgresql/data
+  
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: todo-bakend
+    ports:
+      - "0.0.0.0:5000:5000"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=react_todo
+    depends_on:
+      - postgres
+  
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: todo-frontend
+    ports:
+      - "0.0.0.0:3000:3000"
+
+  
+volumes:
+  postgres-data:
+
