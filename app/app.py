@@ -4,6 +4,8 @@ from flask import Flask, render_template, request, redirect
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 app = Flask(__name__)
 
+
+# this method will create a new connection
 def get_db_connection():
     try:
         conn = psycopg2.connect(host='db',
@@ -18,7 +20,6 @@ def get_db_connection():
         conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
         cur = conn.cursor()
         cur.execute("SELECT 'CREATE DATABASE flask_db' WHERE NOT EXISTS(SELECT FROM pg_database WHERE datname = 'flask_db') ;")
-
     cur.execute('CREATE TABLE  IF NOT EXISTS students (id serial PRIMARY KEY,'
                 'fname varchar (30) NOT NULL,'
                 'lname varchar (30),'
