@@ -5,6 +5,8 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 app = Flask(__name__)
 
+
+#This method will create a new connection
 def get_db_connection():
     """
     Establishes connection to PostgreSQL database.
