@@ -61,3 +61,4 @@ Thumbs.db
 instance/
 .webassets-cache
 PLAN.md
+.venv/
