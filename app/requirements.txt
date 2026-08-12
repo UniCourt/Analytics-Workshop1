@@ -1,5 +1,5 @@
 # Flask Web Framework
-Flask==3.0.3
+Flask
 
 # PostgreSQL adapter for Python
-psycopg2-binary==2.9.9
+psycopg2-binary
