@@ -50,9 +50,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Environment variables
-.env
-.env.local
 
 # Docker
 *.dockerignore
@@ -60,4 +57,8 @@ Thumbs.db
 # Project specific
 instance/
 .webassets-cache
-PLAN.md
+PLAN.md.env
+.venv/
+.venv~cd/
+app/.venv/
+.env
