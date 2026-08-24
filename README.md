@@ -1,7 +1,5 @@
 # Docker and Git Workshop
-
-One Day workshop on understanding Docker and Git
-
+One Day workshop on understanding Docker and Git.
 ## Prerequisite
 Machine/VM with Linux, Python3 (3.x) and pip3 installed.
 
