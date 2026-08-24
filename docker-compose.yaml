@@ -26,7 +26,7 @@ services:
       - POSTGRES_DB=flask_db
       - FLASK_ENV=development
     volumes:
-      - ./app:/app
+      - ./:/app
     depends_on:
       db:
         condition: service_healthy
