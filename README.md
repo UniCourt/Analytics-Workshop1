@@ -22,6 +22,7 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
 
 1. If you don't have an account on GitHub then create an account on [GitHub](https://github.com/join)
 2. Configure SSH key by following the below steps:
+
    - [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
    - [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
 
