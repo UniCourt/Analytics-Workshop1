@@ -15,7 +15,8 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
    ```
 3. Verify the installation was successful by typing:
    ```bash
-   git --version
+
+   git --version ,
    ```
 
 ### GitHub Account
