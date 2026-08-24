@@ -21,6 +21,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code
 COPY . /app
+RUN echo "Dockerfile built successfully"
 
 # Expose port for Flask app
 EXPOSE 5000
