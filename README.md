@@ -18,6 +18,9 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
    git --version
    ```
 
+
+   
+
 ### GitHub Account
 
 1. If you don't have an account on GitHub then create an account on [GitHub](https://github.com/join)
