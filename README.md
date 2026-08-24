@@ -3,6 +3,7 @@
 One Day workshop on understanding Docker and Git
 
 ## Prerequisite
+
 Machine/VM with Linux, Python3 (3.x) and pip3 installed.
 
 ### Linux Machine with following packages installed
@@ -26,16 +27,19 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
    - [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
 
    To list all contents of ssh folder:
+
    ```bash
    ls -al ~/.ssh
    ```
 
    To install xclip:
+
    ```bash
    sudo apt install xclip
    ```
 
    Copy SSH key:
+
    ```bash
    xclip -sel clip < ~/.ssh/id_ed25519.pub
    ```
@@ -43,6 +47,7 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
    - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)
 
 3. Create a new work directory named `WORKSHOP` inside the `/home` directory:
+
    ```bash
    mkdir -p ~/WORKSHOP
    ```
@@ -66,17 +71,20 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
 3. Install Docker Compose plugin (comes with Docker Desktop or as a plugin):
 
    Verify if already installed:
+
    ```bash
    docker compose version
    ```
 
    If not installed, install the plugin:
+
    ```bash
    sudo apt-get update
    sudo apt-get install docker-compose-plugin
    ```
 
    You should see output similar to:
+
    ```
    Docker Compose version v2.30.3
    ```
@@ -88,6 +96,7 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
    ```
 
    Verify the image:
+
    ```bash
    docker run --rm -ti postgres:16-alpine psql -V
    ```
@@ -102,6 +111,7 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
 ## Docker
 
 By the end of this workshop you will understand:
+
 - The concept of containerization and why it's required
 - How to build and run your own containers
 - How to run multiple services with Docker Compose
@@ -114,14 +124,14 @@ By the end of this workshop you will understand:
 
 ## Schedule
 
-| Time          | Topics |
-|---------------|--------|
-| 09:00 - 09:30 | Introduction |
-| 09:30 - 10:00 | [Introduction to Git](github_intro.md) |
-| 10:00 - 11:00 | [Git Commands (push, pull, make Pull requests, etc.)](github_commands.md) |
-| 11:00 - 11:30 | [What is Docker](docker_intro.md) |
-| 11:30 - 12:00 | [Docker Commands](docker_commands.md) |
-| 12:00 - 01:30 | Break |
+| Time          | Topics                                                                                                            |
+| ------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 09:00 - 09:30 | Introduction                                                                                                      |
+| 09:30 - 10:00 | [Introduction to Git](github_intro.md)                                                                            |
+| 10:00 - 11:00 | [Git Commands (push, pull, make Pull requests, etc.)](github_commands.md)                                         |
+| 11:00 - 11:30 | [What is Docker](docker_intro.md)                                                                                 |
+| 11:30 - 12:00 | [Docker Commands](docker_commands.md)                                                                             |
+| 12:00 - 01:30 | Break                                                                                                             |
 | 01:30 - 4:00  | [Building Custom Containers](build_container.md) & [Run Multiple Services with Docker Compose](docker_compose.md) |
-| 4:00 - 5:00   | [Expose Ports, Volume Mounts, Utilizing Networks, Limiting Resources](docker_ports_volume_mount.md) |
-| 5:15 - 5:30   | Wrapping Up |
+| 4:00 - 5:00   | [Expose Ports, Volume Mounts, Utilizing Networks, Limiting Resources](docker_ports_volume_mount.md)               |
+| 5:15 - 5:30   | Wrapping Up                                                                                                       |
