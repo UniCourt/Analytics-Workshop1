@@ -16,7 +16,7 @@ services:
       retries: 5
 
   web:
-    build: .
+    build: ./app
     ports:
       - "5000:5000"
     container_name: app_frontend
