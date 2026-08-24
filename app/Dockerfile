@@ -1,5 +1,5 @@
 # Use official Python runtime (Alpine Linux for minimal size)
-FROM python:3.13-alpine
+FROM python:3.12-alpine
 
 # Set environment variables
 ENV FLASK_APP=app.py
