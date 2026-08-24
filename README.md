@@ -8,7 +8,7 @@ Machine/VM with Linux, Python3 (3.x) and pip3 installed.
 ### Linux Machine with following packages installed
 
 1. Install Ubuntu 24.04 LTS from [here](https://releases.ubuntu.com/24.04/)
-2. Install Git from your terminal by running following commands:
+2. Install Git frm your terminal by running following commands:
    ```bash
    sudo apt-get update
    sudo apt-get install git
