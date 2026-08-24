@@ -1,4 +1,3 @@
-# Docker and Git Workshop
 
 One Day workshop on understanding Docker and Git
 
