@@ -79,3 +79,5 @@ Remote Repository (GitHub)
 | `git branch` | List/create branches |
 | `git checkout` | Switch branches |
 | `git merge` | Join branch histories |
+
+Git is a free, open-source software tool that tracks changes in code files locally on a computer, while GitHub is a cloud-based hosting service owned by Microsoft that allows developers to store, manage, and collaborate on those Git projects online
