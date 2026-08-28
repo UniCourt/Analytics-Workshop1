@@ -25,8 +25,8 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=flask_db
       - FLASK_ENV=development
-    volumes:
-      - ./app:/app
+#    volumes:
+#      - ./:/app
     depends_on:
       db:
         condition: service_healthy
